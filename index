@@ -1,0 +1,164 @@
+print("FIFO")
+e1 = []
+e2 = []
+
+p1 = ["A", "a","b", "B", "b"]
+pr1 =["A","a", "b", "B"]
+pra1 =["A", "B","C", "D", "E"]
+p2 = ["A", "b", "a", "A", "b"]
+pr2 = ["A", "b", "a", "A" ]
+
+for i in range(len(p1)):
+  p = p1[i] #A
+  print(" ") 
+  print("Processo em inicio", p, "O processo pendente é:", pr1)
+  t = len(pr1)
+
+
+  if t >= 1:
+    del pr1[0]
+else
+  if i >= 0:
+    print("Os processos prontos são", e1)
+  e1.append(p)
+
+
+  
+print(" ")
+
+
+for i in range(len(p2)):
+  p = p2[i]
+  print(" ")
+  print("Processo em inicio", p, "O processo pendente é:", pr2)
+  t = len(pr2)
+  if i >= 0:
+    print("O processo foi:", e2)
+  e2.append(p)
+  if t >= 1:
+    del pr2[0]
+
+
+print("")
+print("SJF")
+print("")
+tempo1 = len(pr1)
+tempo2 = len(pr2)
+e1.clear()
+e2.clear()
+
+
+
+pr1 = ["A", "a", "B", "b", "A", "a"]
+prc1 = ["A", "a", "B", "b", "A"]
+pr2 = ["A", "B", "B", "B", "a"]
+prc2 = ["A", "B", "B", "B"]
+
+if tempo1 <= tempo2: 
+  
+  for i in range(t1): 
+    p = pr1[i]
+    print(" ") 
+    print("Processo em inicio", p, "O processo pendente é:", prc1)
+    t = len(prc1)
+    print("Os processos prontos são:", e1)
+    e1.append(p)
+    if t >= 1:
+      del prc1[0]
+  print("")
+  for i in range(t2):
+    p = pr2[i]
+    print(" ") 
+    print("Processo em inicio", p, "O processo pendente é:", prc2)
+    t = len(prc2)
+    print("Os processos prontos são:", e2)
+    e2.append(p)
+    if t >= 1:
+      del prc2[0]
+    
+if t2 < t1:  
+  for i in range(t2):
+    p = pr2[i]
+    print(" ") 
+    print("Processo em inicio", p, "O processo pendente é:", prc2)
+    t = len(prc2)
+    print("Os processos prontos são:", e2)
+    e2.append(p)
+    if t >= 1:
+      del prc2[0]
+
+  print("")
+  for i in range(t1):
+    p = pr1[i]
+    print(" ") 
+    print("Processo em inicio", p, "O processo pendente é:", prc1)
+    t = len(prc1)
+    print("Os processos prontos são:", e1)
+    e1.append(p)
+    if t >= 1:
+      del prc1[0]
+
+
+Prioridade1 = [["A", "a", "B", "b", "A", "a"], ["P2"]]
+Prioridade2 = [["A", "a", "A", "b", "A"],["P1"]]
+Processo1 = ["A", "a", "B", "b", "A"]
+Processo2 = ["a", "A", "b", "A"]
+e1.clear()
+e2.clear()
+
+print("Iniciando processo com prioridade 1")
+
+if pri1[1][0] == "P1":
+  for i in range(len(pri1[0])):
+  
+    p = pri1[0][i]
+    print(" ") 
+    print("Processo em inicio", p, "O processo pendente é:", pric1)
+    t = len(pric1)
+    if t >= 1:
+      del pric1[0] 
+//else
+    if i >= 1:
+      print("Os processos prontos são", e1)
+    e1.append(p)
+  
+  print(" ")
+  print("Iniciar processo com processo 2")
+  for i in range(len(pri2[0])):
+    p = pri2[0][i]
+    print(" ") 
+    print("Processo em inicio", p, "O processo pendente é:", pric2)
+    t = len(pric2)
+    if t >= 1:
+      del pric2[0]
+    if i >= 1:
+      print("Os processos prontos são", e2)
+    e2.append(p)
+
+
+else:
+  print("Iniciar processo junto ao 2")
+  for i in range(len(pri2[0])):
+      p = pri2[0][i]
+      print(" ") 
+      print("Processo em inicio", p, "O processo pendente é:", pric2)
+      t = len(pric2)
+      if t >= 1:
+        del pric2[0]
+      if i >= 1:
+        print("Os processos prontos são", e2)
+      e2.append(p)
+
+  
+  print(" ")
+  print("Iniciar processo junto ao 1")
+  for i in range(len(pri1[0])):
+      p = pri1[0][i]
+      print(" ") 
+      print("Processo em inicio", p, "O processo pendente é:", pric1)
+      t = len(pric1)
+      if t >= 1:
+        del pric1[0] #
+      if i >= 1:
+        print("Os processos prontos são:", e1)
+      e1.append(p)
